@@ -1,2 +1,2 @@
 all:
-	g++ main.cpp sidesCalculation.cpp readDataFromFile.cpp -o main
+	g++ main.cpp sidesCalculation.cpp readDataFromFile.cpp map.cpp -o main

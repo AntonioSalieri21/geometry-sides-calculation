@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -14,18 +15,7 @@ class Map
 
     vector<vector<int>> data;
 
-    void printMap()
-    {
-        cout << "X: " << x << "   " << "Y: " << y << endl;
-        for(vector<int> line : data)
-        {
-            for(int column : line)
-            {
-                cout << column << " ";
-            }
-            cout << endl;
-        }
-    }
+    void printMap();
 };
 
 #endif
