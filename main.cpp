@@ -10,42 +10,38 @@ using namespace std;
 int main() 
 {
 
-    vector<string> data = readDataFromFile("HeightMap1.txt");
+    Map map = readDataFromFile("HeightMap1.txt");
     cout << "HeightMap1.txt" << endl;
-    for(string line : data) {
-        cout << line << endl;
-    }
-    int res = countSides(data);
+    map.printMap();
+
+    int res = countSides(map);
     cout << "Number of sides: " << res << endl;
     cout << endl;
 
 
-    data = readDataFromFile("HeightMap2.txt");
+    map = readDataFromFile("HeightMap2.txt");
     cout << "HeightMap2.txt" << endl;
-    for(string line : data) {
-        cout << line << endl;
-    }
-    res = countSides(data);
+    map.printMap();
+
+    res = countSides(map);
     cout << "Number of sides: " << res << endl;
     cout << endl;
 
 
-    data = readDataFromFile("HeightMap3.txt");
+    map = readDataFromFile("HeightMap3.txt");
     cout << "HeightMap3.txt" << endl;
-    for(string line : data) {
-        cout << line << endl;
-    }
-    res = countSides(data);
+    map.printMap();
+
+    res = countSides(map);
     cout << "Number of sides: " << res << endl;
     cout << endl;
 
 
-    data = readDataFromFile("HeightMap4.txt");
+    map = readDataFromFile("HeightMap4.txt");
     cout << "HeightMap4.txt" << endl;
-    for(string line : data) {
-        cout << line << endl;
-    }
-    res = countSides(data);
+    map.printMap();
+
+    res = countSides(map);
     cout << "Number of sides: " << res << endl;
 
     return 0;
