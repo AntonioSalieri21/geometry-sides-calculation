@@ -2,7 +2,6 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include "sidesCalculation.h"
 #include "readDataFromFile.h"
 
 using namespace std;
@@ -14,7 +13,7 @@ int main()
     cout << "HeightMap1.txt" << endl;
     map.printMap();
 
-    int res = countSides(map);
+    int res = map.countSides();
     cout << "Number of sides: " << res << endl;
     cout << endl;
 
@@ -23,7 +22,7 @@ int main()
     cout << "HeightMap2.txt" << endl;
     map.printMap();
 
-    res = countSides(map);
+    res = map.countSides();
     cout << "Number of sides: " << res << endl;
     cout << endl;
 
@@ -32,7 +31,7 @@ int main()
     cout << "HeightMap3.txt" << endl;
     map.printMap();
 
-    res = countSides(map);
+    res = map.countSides();
     cout << "Number of sides: " << res << endl;
     cout << endl;
 
@@ -41,8 +40,8 @@ int main()
     cout << "HeightMap4.txt" << endl;
     map.printMap();
 
-    res = countSides(map);
+    res = map.countSides();
     cout << "Number of sides: " << res << endl;
-
+    cout << endl;
     return 0;
 }

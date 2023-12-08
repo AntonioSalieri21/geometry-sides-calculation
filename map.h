@@ -16,6 +16,10 @@ class Map
     vector<vector<int>> data;
 
     void printMap();
+    int countSides();
+    int _countSidesX();
+    int _countSidesY();
+    int _countSidesZ();
 };
 
 #endif

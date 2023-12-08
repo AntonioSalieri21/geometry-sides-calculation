@@ -1,6 +1,6 @@
 #include "readDataFromFile.h"
 
-vector<string> split(string line)
+vector<string> split(string line) //*Used for splitting the line into words*//
 {
     vector<string> result;
     stringstream ss(line);
@@ -18,8 +18,8 @@ Map readDataFromFile(string file)
     if (inputFile.is_open()) {
         string line;
         int i = 0;
-        while (getline(inputFile, line)) {
-            if(i == 0) 
+        while (getline(inputFile, line)) { 
+            if(i == 0) //*If its first line - read X and Y*//
             {
                 vector<string> splitted = split(line);
                 res.y = stoi(splitted.at(0));
@@ -27,7 +27,7 @@ Map readDataFromFile(string file)
                 i++;
                 continue;
             }
-            vector<string> splitted = split(line);
+            vector<string> splitted = split(line); //*Otherwise its a line of the map*//
             vector<int> line;
             for(string s : splitted)
             {
