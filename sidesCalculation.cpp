@@ -11,7 +11,6 @@ int countSides(Map &map)
 int _countSidesX(Map &map)
 {
     int resX = 2; //left and right sides always exist
-    //for(string line : data)
 
     for(int y = 0; y < map.y; y++)
     {
@@ -53,7 +52,7 @@ int _countSidesY(Map &map)
             {
                 topColumn = map.data.at(i-1).at(j);
             }
-            //cout << currentColumn << " " << leftColumn << " " << topColumn << endl;
+
             if(leftColumn != currentColumn && topColumn != currentColumn)
             {
                 
