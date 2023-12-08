@@ -1,0 +1,7 @@
+HeightMap1	6 faces
+
+HeightMap2	9 faces
+
+HeightMap3	13 faces
+
+HeightMap4	14 faces
